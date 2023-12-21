@@ -1,7 +1,7 @@
 {
+  "homepage": "https://paulilay.github.io/Weathering-App",
   "name": "new-app",
   "version": "0.1.0",
-  "homepage": "https://Paulilay.github.io/Weathering-App",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -20,7 +20,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [
