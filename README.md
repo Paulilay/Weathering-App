@@ -1,3 +1,17 @@
+# Weathering App
+Weathering Web App made with react.js, CSS, and JavaScript. The web app uses a real-time API of weather data that is used and fetched into the code. The web app features changing the color of the app depending on the temperature of the typed city/place. It also features some additional information such as wind speed and atm pressure, temperature, and weather throughout the day and the following days.
+
+## Link
+[Live Demo](https://paulilay.github.io/Weathering-App/)
+
+## Installation
+Follow these commands one by one:
+```
+npm install
+npm run dev
+npm start
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
