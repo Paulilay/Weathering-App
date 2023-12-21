@@ -1,0 +1,385 @@
+* {/* resets the default browser styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {/* default fonts for the app*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {/* used for the size of the background as well as the transition effect*/
+  background-size: 1000px 1000px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+
+
+
+
+main {/* used for styling the background of the app */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  height: 900px;
+  text-align: center;
+  /*padding-top: 80px;*/
+  margin: 0 auto;
+}
+
+.search-box { /* styling of the searchbox */
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.search-box .search-bar { /* further styling of the search bar*/
+  width: 100%;
+  padding: 15px;
+  border: none;
+  appearance: none;
+  background: none;
+  
+  outline: none;
+  background-color: rgb(254, 255, 255);
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  border-radius: 16px;
+  margin-top: -100px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 1s ease;
+}
+
+.search-bar:hover { /* used to create an expanding effect when clicking the searchbar */
+
+  width: 130%;
+  transition: 0.5s;
+  margin-left: -15%;
+
+}
+
+.search-box .search-bar:focus { /* shade of the bar changes when selecting the search bar */
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.weather-details .location {/* styling targeted towards the location that the user is looking at*/
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-details .date {/* styling targeted towards the date*/
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {/* further styling for the box which contains all of the data*/
+  text-align: center;
+}
+
+.weather-box .weather { /* styling for the weather description of the box */
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .temp { /* further styling for the tempreature side of the weather box */
+  position: relative;
+  
+  margin: 15px auto;
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: rgb(247, 242, 242);
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+
+.weather-details {/* styling for the entire box containing weather details */
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 1px 2px rgba(20, 20, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: rgb(12, 101, 218);
+  border-radius: 16px;
+  padding: 50px;
+}
+/* colours change depending on the weather*/
+.weather-details.warm {
+  background-color: rgb(131, 131, 62);
+}
+
+.weather-details.hot {
+  background-color: rgb(119, 62, 62);
+}
+
+.Tmax{
+  text-align: left;
+  color: white;
+  margin-left: 8%;
+  margin-top: -11%;
+}
+.Tmin{
+  text-align: left;
+  color: white;
+  margin-left: 8%;
+}
+
+.weather-details .wind {/* styling for the wind part of the weather details*/
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 200;
+  margin-right: 65%;
+  margin-top: 12%;
+}
+
+
+.weather-details .pressure {/* styling for the preassure part of the weather details*/
+  border-radius: 16px;
+  color: rgb(252, 252, 252);
+  font-size: 20px;
+  font-weight: 200;
+  margin-left: 70%;
+  margin-top: -7%;
+}
+
+
+.weather-details h1 {/* further styling for the wind part of the weather details*/
+  color: rgb(252, 252, 252);
+  margin-top: -33%;
+  font-size: 18px;
+  margin-left: -65%;
+}
+
+.weather-details h2 {/* further styling for the wind part of the weather details*/
+  color: rgb(252, 252, 252);
+  margin-top: -7%;
+  font-size: 18px;
+  margin-right: -70%;
+}
+
+.line {/* styling for the line divider*/
+  border-left: 6px solid rgb(255, 255, 255);
+  height: 100px;
+  left: 50%;
+  margin-top: 25%;
+  margin-left: 50%;
+  top: 0;
+  
+}
+
+.button {/* styling for the button that takes the user to a different page*/
+  height: 35px;
+  width: 80px;
+  position: absolute;
+  left: 54%;
+ margin-top: -1.5%;
+ background-color: rgb(60, 11, 236);
+ border: 4px double #cebdbd;
+ /*border: rgba(20, 20, 70, 0.5);*/
+ border-radius: 1px;
+ padding: 5px 15px;
+ cursor: pointer;
+ font-size: 17px;
+ text-align: center;
+}
+
+.secondButton {/* styling for the button that takes the user to the main page*/
+  height: 35px;
+  width: 80px;
+  position: absolute;
+  left: 47%;
+ background-color: rgb(60, 11, 236);
+ border: 4px double #cebdbd;
+ /*border: rgba(20, 20, 70, 0.5);*/
+ border-radius: 1px;
+ padding: 5px 15px;
+ cursor: pointer;
+ font-size: 17px;
+ text-align: center;
+}
+
+/* colouring of the button changes depending on the weather*/
+.secondButton.warm {
+  background-color: rgb(158, 158, 42);
+}
+
+
+.secondButton.hot {
+  background-color: red;
+}
+
+.button.warm {
+  background-color: rgb(158, 158, 42);
+}
+
+
+.button.hot {
+  background-color: red;
+}
+
+/* creates hover effect when the cursor is over the button*/
+.secondButton:hover {
+  width: 80px;
+  background: url('./assets/arrow2.png') no-repeat 0 0;
+  background-position:center;
+  text-align: center;
+  border-color: rgb(255, 255, 255);
+  background-size: 40%;
+  transition: 0s;
+}
+/* creates hover effect when the cursor is over the button*/
+button:hover {
+  background: url('./assets/arrow.png') no-repeat 0 0;
+  background-position:center;
+  text-align: center;
+  border-color: rgb(255, 255, 255);
+  background-color: blue;
+  transition: 1s;
+  background-size: 40%;
+}
+/* makes the writing of the words inside the button white*/
+button p {
+  color: white;
+}
+
+button:hover p {
+  display:none;
+}
+
+
+
+
+
+/*background colour changes depending on the temp */
+.color {
+  background-color: blue;
+}
+
+.color.warm {
+  background-color: yellow;
+}
+
+.color.hot {
+  background-color: red;
+}
+
+
+
+.data {/* data margin*/
+  margin-top: 5%;
+}
+
+
+.tempMargin {/* temp margin*/
+  margin-top: 8%;
+  font-size: 20px;
+}
+
+.iconTime {/* styling of icons on second page*/
+  background-color: rgb(12, 101, 218);
+  margin-left: 5%;
+  margin-top: 4.5%;
+  height: 25%;
+  width: 30%;
+  border-color: black;
+  border-style: outset;
+  border-radius: 50%;
+  
+  
+  color: white;
+  
+ 
+}
+
+.iconTime2 {/* further styling of icons on second page*/
+  background-color: rgb(12, 101, 218);
+  margin-left: 65%;
+  margin-top: -32.5%;
+  height: 25%;
+  width: 30%;
+  border-color: black;
+  border-style: outset;
+  border-radius: 50%;
+  
+  
+  color: white;
+ 
+}
+
+/* icon colour changes depending on the temp
+*/
+.iconTime.warm {
+  background-color: rgb(131, 131, 62);
+}
+
+.iconTime.hot  {
+  background-color: rgb(119, 62, 62);
+}
+
+.iconTime2.warm {
+  background-color: rgb(131, 131, 62);
+}
+
+.iconTime2.hot  {
+  background-color: rgb(119, 62, 62);
+}
+
+
+
+.card { /* used to style the boxes of the future days and their tempreatures*/
+  margin-top: 1em;
+  display: inline-block;
+  color: white;
+  background-color: rgba(182, 181, 181, 0.2);
+  border-radius: 16px;
+  padding: 5px;
+  color: #FFF;
+  font-weight: 900;
+  justify-content: space-between;
+  text-shadow: 1px 2px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  margin-right: 15px;
+  
+}
+.scrolling-wrapper { /* allows the div container to become horizontal and gives it a scrolling effect*/
+  
+  width: 25em;
+  overflow-x: auto;
+  white-space: nowrap;
+
+}
+* { /* styles the scroll bar*/
+  scrollbar-width: thin;
+  scrollbar-color: blue ;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar { /* styles the scroll bar*/
+  width: 12px;
+}
+
+
+
+*::-webkit-scrollbar-thumb {/* styles the thumb of the scroll bar*/
+  background-color: rgb(172, 172, 189);
+  border-radius: 20px;
+ 
+}
