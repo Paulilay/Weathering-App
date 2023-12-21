@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Weathering-App/static/css/main.87a3af84.css",
+    "main.js": "/Weathering-App/static/js/main.ce2626f4.js",
+    "static/media/arrow2.png": "/Weathering-App/static/media/arrow2.1d78484bc481807bf5f0.png",
+    "index.html": "/Weathering-App/index.html",
+    "main.87a3af84.css.map": "/Weathering-App/static/css/main.87a3af84.css.map",
+    "main.ce2626f4.js.map": "/Weathering-App/static/js/main.ce2626f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87a3af84.css",
+    "static/js/main.ce2626f4.js"
+  ]
+}
